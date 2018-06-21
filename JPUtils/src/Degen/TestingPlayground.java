@@ -10,11 +10,10 @@ public class TestingPlayground {
 	}
 	
 	public void runTest() {
-		TestA a = new TestA();
-		System.out.println(Debugger.prettyDump(a));
-		System.out.println(Debugger.dump(null, a));
-		System.out.println(Debugger.dump(new StringBuilder(), true));
-		System.out.println(Debugger.dump(new StringBuilder(), null));
+		Debugger.dump(new TestA());
+		Debugger.dump(true);
+		Debugger.dump(null);
+		Debugger.dump(new char[] {'h','e','l','l','o'});
 	}
 
 	enum C {
